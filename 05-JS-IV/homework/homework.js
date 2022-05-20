@@ -97,11 +97,13 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (objeto["propiedad"] === password){
+  
+  if (objeto[propiedad]){
     return true;
-  } 
+  }
+  else {
     return false;
-      
+  }
 }
 
 function verificarPassword (usuario, password) {
@@ -109,12 +111,18 @@ function verificarPassword (usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (usuario["password"] === password){
-    return true
-  } else {
-    return false
+  if (usuario['password'] === password){
+    return true;
   }
+  else {
+    return false;
+  }
+
+
 }
+
+
+
 
 function actualizarPassword (usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
